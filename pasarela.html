@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=ARTPCaBw000n9UMxGjqbP1rFS8r0CW3-mBf79tkbwzVbCyjw8h34qHpN9vOkr7CBu0JkHI0z9nwkXtUE"></script>
+</head>
+<body>
+    <div id="paypal-button-container"></div>
+    <script>
+        paypal.Buttons({
+            style: { 
+                color: 'blue',
+                shape: 'pill',
+                label: 'pay'
+            },
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: 5000
+                        }
+                    }]
+                });
+            },
+
+            onApprove: function(data, actions) {
+                actions.order.capture().then(function (detalles){
+                    console.log(detalles);
+                    
+                });
+            },
+
+            onCancel: function(data) {
+                alert("Pago cancelado")
+                console.log(data);
+            }
+        }).render('#paypal-button-container');
+    </script>
+</body>
+</html>

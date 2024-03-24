@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>LogIn</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="cover" >
+<section>
+
+    <div class="form-box">
+        <div class="form-value">
+                <form action="conecindex.php" method="POST" autocomplete="off" class="full-box logInForm">
+                    <h2>Inicio</h2>
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        
+                        <input type="text" class="form-control" id="user" name="user" placeholder="Usuario">
+                        <label for="user">Email</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="password"  >
+                        <label for="password">Clave</label>
+                    </div>
+
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Recordar clave  <a href="#">Olvide clave</a></label>
+                </div>
+                   
+                        <input type="submit" value="Iniciar sesión" ><i class="fas fa-plus">
+                            
+                    <div class="register">
+                        <p>No tienes cuenta <a href="registro.php">Registrarse</a></p>
+                    </div>
+
+                </form>
+                
+                
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <script>
+
+	            	$.material.init();
+
+	            </script>
+                
+        </div>  
+    </div>
+</section>
+</body>
+
+</html>
+
+

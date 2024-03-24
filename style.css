@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #ade0db;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+
+}
+.logo {
+    margin-left: 90px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a:hover {
+    background: #B0F2E7;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .header{
+    height: 75vh !important;
+    background: url("https://th.bing.com/th/id/R.f36bd38d4f07b19f3457467f088d05c4?rik=3O379dozh2BZYw&pid=ImgRaw&r=0") no-repeat center;
+    background-size: cover;
+ }
+
+
+ .title {
+   font-family: monospace;
+   letter-spacing: 4px;
+   margin: 0;
+   font-size: 50px;
+   text-shadow: 0 0 5px #30d2f7, 0 0 15px #30d2f7, 0 0 30px #0b83e5;
+   color: white;
+    }
+
+.neon {
+   font-family: "Dancing Script", cursive;
+   letter-spacing: 8px;
+   margin: 0;
+   font-size: 100px;
+   text-shadow: 0 0 5px aqua, 0 0 15px aqua, 0 0 30px aqua;
+   color: white;
+       }
+
+ p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color:#001958;
+    padding-left: 0 100px;
+ }
+
+ .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #BCEBDF;
+    color: black;
+    text-decoration: none;
+    background: #D9DBDB;
+ }
+ .btn:hover {
+    background: none;
+ }
+
+ .btn-home {
+    display: flex;  
+ }
+
+ .btn-home a{
+    margin: 0 10px;
+ }
+
+ .content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .sau {
+    padding: 30px;
+    background: #BCEBDF;
+ }
+ .saul {
+   padding: 40px;
+   background: #D0F2E7;
+ }
+ 
+ .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+
+ .box-container .box {
+    height: 11rem;
+    width: 17rem;
+    color: #fff;
+    background: #D9DBDB;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(0, 0, 0, .5);
+    margin: 2rem;
+ }
+
+ .box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #D0F2E7;
+    font-size: 2rem;
+    margin: 1rem 0;
+ }
+ .box-container .box h3 {
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+ }
+ .box-container .box p {
+    font-size: 16px;
+    padding: 0 5px
+ }
+ .about { 
+    background:#ade0db;
+
+ }
+ .price {
+    background: url(img/prue.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+ }
+ .contact {
+    padding-top: 20px;
+    background: #bdbfbf;
+    padding-bottom: 0;
+ }
+ @media (max-width: 768px) {
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+   
+    .navbar{
+        display: none;
+    }
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
